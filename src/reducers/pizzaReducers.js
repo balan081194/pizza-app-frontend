@@ -5,7 +5,7 @@ import axios from 'axios'
 
 export const getAllPizzasReducer = createAsyncThunk('get/getpizzas',async ()=>{
             
-    return axios.get('/api/pizzas/getallpizzas ').then(res=>{
+    return axios.get('https://pizza-app-backend-d1tt.onrender.com/api/pizzas/getallpizzas ').then(res=>{
         return res.data
     })
 })
